@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+.container{
+    max-width: 600px;
+    max-height: 400px;
+    margin: 7em auto 7em auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-areas: 
+    "box1 box1"
+    "box2 box3";
+}
+.box1{
+    background-color: #fff;
+    grid-area: box1;
+    border-radius: 10px 10px 0 0;
+    padding: 2em 2em;
+}
+h2{
+    padding-bottom: 1em;
+    color: var(--Cyan);
+}
+h3{
+    padding-bottom: .6em;
+    color: var(--Bright-Yellow);
+    
+}
+p{
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+    padding-bottom: .6em;
+    
+}
+
+.box2{
+    background-color: var(--Cyan);
+    grid-area: box2;
+    border-radius: 0 0 0 10px;
+    padding: 2em 2em;
+    color: var(--Light-Gray);
+}
+
+.title{
+    font-weight: 700;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+}
+.price-text{
+    padding-top: 22px;
+    color: hsl(179, 62%, 65%);
+}
+.price-number{
+    padding-top: 15px;
+    font-size: 27px;
+    padding-right: 10px;
+    font-weight: 700;
+}
+.access{
+    padding-top: 5px;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+button{
+    font-size: 15px;
+    display: flex;
+    background-color: var(--Bright-Yellow);
+    padding: 13px 80px;
+    color:#fff;
+    font-weight: 700;
+    border-color: var(--Bright-Yellow);
+    border-radius: 5px;
+    box-shadow:  0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.10);
+}
+
+.box3{
+    background-color: hsl(179, 62%, 50%);
+    grid-area: box3;
+    border-radius: 0 0 10px 0;
+    padding: 2em 2em;
+    color: var(--Light-Gray);
+}
+.describtion{
+    padding-top: 15px;
+    padding-right: 1.5em;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
